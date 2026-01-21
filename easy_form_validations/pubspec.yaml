@@ -1,6 +1,7 @@
 name: form_validations_kit
 description: A simple, reusable, and production-ready form validation package for Flutter.
 version: 0.0.5
+license: MIT
 
 # Temporary homepage (OK even without GitHub)
 homepage: https://pub.dev/packages/form_validations_kit
@@ -19,3 +20,4 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
+
