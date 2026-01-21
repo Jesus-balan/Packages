@@ -1,16 +1,12 @@
 # form_validations_kit
 
-A simple, reusable, and production-ready **form validation package for Flutter**.
-Built with clean architecture and zero UI dependency.
+A simple, reusable, and production-ready form validation package for Flutter.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Jesus-balan/Packages/main/easy_form_validations/assets/images/form_validation_demo.gif" width="400" />
-</p>
+## 🎬 Demo
 
----
+![Form Validation Demo](https://raw.githubusercontent.com/Jesus-balan/Packages/main/easy_form_validations/assets/images/form_validation_demo.gif)
 
 ## ✨ Features
-
 - Rule-based validation
 - Email validation
 - Password strength rules
@@ -18,9 +14,6 @@ Built with clean architecture and zero UI dependency.
 - Phone & number validation
 - Clean and readable API
 - No UI dependency
-- Fully test-covered
-
----
 
 ## 📦 Installation
 
