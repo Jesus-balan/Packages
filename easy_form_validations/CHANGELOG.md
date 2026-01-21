@@ -1,3 +1,8 @@
+## 0.0.6
+- Added license field to pubspec.yaml
+- Improved pub.dev package metadata
+- Minor documentation consistency fixes
+
 ## 0.0.5
 - Fixed README markdown rendering
 - Improved installation & usage formatting

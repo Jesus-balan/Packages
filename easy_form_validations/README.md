@@ -70,7 +70,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  form_validations_kit: ^0.0.5
+  form_validations_kit: ^0.0.6
 
 Then run:
 
