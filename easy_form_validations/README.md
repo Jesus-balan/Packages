@@ -1,79 +1,103 @@
-form_validations_kit
+<h1 align="center">form_validations_kit</h1>
 
-A simple, reusable, and production-ready form validation engine for Flutter.
-Build clean, readable, and scalable validations without coupling logic to UI.
+<p align="center">
+  Rule-based • Testable • No UI dependency • Flutter
+</p>
 
-Lightweight • Rule-based • Testable • No UI dependency
+<p align="center">
+  <a href="https://pub.dev/packages/form_validations_kit">
+    <img src="https://img.shields.io/pub/v/form_validations_kit.svg" />
+  </a>
+  <img src="https://img.shields.io/pub/likes/form_validations_kit" />
+  <img src="https://img.shields.io/pub/points/form_validations_kit" />
+  <img src="https://img.shields.io/github/license/Jesus-balan/Packages" />
+</p>
 
-🚀 Why form_validations_kit?
+---
 
-In most Flutter apps, validation logic becomes:
+## 🚀 Overview
 
-❌ Duplicated across screens
+**form_validations_kit** is a lightweight, reusable, and production-ready  
+**form validation engine for Flutter**.
 
-❌ Tightly coupled to UI
+It helps you keep validation logic:
+- clean  
+- reusable  
+- testable  
+- independent from UI  
 
-❌ Hard to test and maintain
+No more duplicated validators across screens.
 
-form_validations_kit solves this by providing a rule-based validation engine that is:
+---
 
-✅ Composable
+## ✨ Features
 
-✅ Reusable
+- ✅ Rule-based validation engine  
+- 📧 Email validation  
+- 🔐 Password strength rules  
+- 🔁 Confirm password matching  
+- 📞 Phone & numeric validation  
+- ⚡ Fast-exit validation (first error only)  
+- 🧪 Pure Dart, easy to test  
+- 🎯 No UI dependency  
 
-✅ Easy to test
+---
 
-✅ Production ready
+## 📱 Platform Support
 
-✨ Features
+| Platform | Supported |
+|----------|-----------|
+| Android  | ✅ |
+| iOS      | ✅ |
+| Web      | ✅ |
+| Windows  | ✅ |
+| macOS    | ✅ |
+| Linux    | ✅ |
 
-Rule-based validation
+---
 
-Email validation
+## 🎬 Example App
 
-Password strength rules
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Jesus-balan/Packages/main/easy_form_validations/assets/images/form_validation_demo.gif" width="300" />
+</p>
 
-Confirm password support
+---
 
-Phone & number validation
+## 📦 Installation
 
-Fast-exit validation (first error only)
+Add this to your `pubspec.yaml`:
 
-Clean and readable API
-
-No UI dependency
-
-🎬 Example App
-
-![Form Validation Demo](https://raw.githubusercontent.com/Jesus-balan/Packages/main/easy_form_validations/assets/images/form_validation_demo.gif)
-
-📦 Installation
-
-Add the package to your pubspec.yaml:
-
+```yaml
 dependencies:
-  form_validations_kit: ^0.0.4
-
+  form_validations_kit: ^0.0.5
 
 Then run:
 
-flutter pub get
+  flutter pub get
 
-📖 Usage
+
+## Usage
 
 Designed to work seamlessly with Flutter Form and TextFormField.
 
-✨ Basic Required Validation
+### Required Field
+
+Ensures the field is not empty.
+
+```dart
 TextFormField(
   validator: (value) => EasyFormValidator.validate(
     value,
-    rules: [
-      Rules.required(),
-    ],
+    rules: [Rules.required()],
   ),
 );
 
-📧 Email Validation
+### Email Validation
+
+Ensures the field is not empty.
+
+```dart
 TextFormField(
   keyboardType: TextInputType.emailAddress,
   validator: (value) => EasyFormValidator.validate(
@@ -85,7 +109,11 @@ TextFormField(
   ),
 );
 
-🔐 Password Validation
+### Password Validation
+
+Ensures the field is not empty.
+
+```dart
 TextFormField(
   obscureText: true,
   validator: (value) => EasyFormValidator.validate(
@@ -99,7 +127,11 @@ TextFormField(
   ),
 );
 
-🔁 Confirm Password Validation
+### Confirm Password Validation
+
+Ensures the field is not empty.
+
+```dart
 TextFormField(
   obscureText: true,
   validator: (value) => EasyFormValidator.validate(
@@ -111,7 +143,12 @@ TextFormField(
   ),
 );
 
-📞 Phone Number Validation
+
+### Phone Number Validation
+
+Ensures the field is not empty.
+
+```dart
 TextFormField(
   keyboardType: TextInputType.phone,
   validator: (value) => EasyFormValidator.validate(
@@ -123,14 +160,18 @@ TextFormField(
   ),
 );
 
-✅ Validate an Entire Form
+### Validate an Entire Form
+
+Ensures the field is not empty.
+
+```dart
 final _formKey = GlobalKey<FormState>();
 
 Form(
   key: _formKey,
   child: Column(
     children: [
-      // form fields here
+      // form fields
       ElevatedButton(
         onPressed: () {
           if (_formKey.currentState!.validate()) {

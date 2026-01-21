@@ -1,3 +1,7 @@
+## 0.0.5
+- Fixed README markdown rendering
+- Improved installation & usage formatting
+
 ## 0.0.4
 - Added complete professional README structure
 - Added detailed usage examples for all validation rules
