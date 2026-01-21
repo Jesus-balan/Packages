@@ -19,4 +19,4 @@ A simple, reusable, and production-ready form validation package for Flutter.
 
 ```yaml
 dependencies:
-  form_validations_kit: ^0.0.2
+  form_validations_kit: ^0.0.3
